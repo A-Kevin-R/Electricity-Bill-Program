@@ -1,0 +1,32 @@
+def condition1():
+    print("No payment")
+
+def condition2(b):
+    print("The amount per unit is 2 rupees")
+    total = b*2
+    print("The total amount to be paid is:", total)
+
+def condition3(b):
+    print("The amount per unit is 3 rupees")
+    total = b*3
+    print("The total amount to be paid is:", total)
+
+def condition4(b):
+    print("The amount per unit is 4 rupees")
+    total = b*4
+    print("The total amount to be paid is:", total)
+    
+cr = int (input("Enter the current unit:"))
+pr = int (input("Enter the previous unit:"))
+uu = cr-pr
+print("The used unit is:", uu)
+
+if uu<100:
+    condition1()
+if uu>=100 and uu<300:
+    condition2(uu)
+if uu>=300 and uu<500:
+    condition3(uu)
+if uu>=500:
+    condition4(uu)
+    
